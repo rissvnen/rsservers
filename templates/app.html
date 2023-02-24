@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <meta charset="UTF-8">
+    <title>testi</title>
+</head>
+<body>
+    <div class="rectangle-container">
+        {% for key, value in sanakirja.items %}
+            {% if forloop.counter in freeworlds %}
+                <div class="rectangleFree">
+                    <div class="ball">
+                        <p>{{ key }}</p>
+                    </div>
+                    <div class="inside">
+                        <p>{{ value }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        <div class="rectangle">
+            <div class="ball">
+              <p>{{ key }}</p>
+          </div>
+          <div class="inside">
+              <p>{{ value }}</p>
+          </div>
+    </div>
+  {% endfor %}
+    </div>
+<script>
+    setInterval(function() {
+    location.reload();
+    }, 10000);
+</script>
+
+{% endblock %}
+</body>
+</html>
