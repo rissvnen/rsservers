@@ -21,11 +21,11 @@ def lahetetaanPing(serveri: int) -> str:
     return vastaus.stdout
 
 def kirjoitetaanTiedostoon(server: int, answer: str):
-    f = open("venv/tallennetut.txt", "w")
+    f = open("tallennetut.txt", "w")
     f.write(answer)
     f.close()
 
-    f = open("venv/tallennetut.txt", "r")
+    f = open("tallennetut.txt", "r")
     file = f.readlines()
     for line in file:
         if "Average" in line:

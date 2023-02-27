@@ -1,0 +1,8 @@
+
+Pinging osrs-world-92.l3ausy.jagex.com [103.124.186.201] with 32 bytes of data:
+Reply from 103.124.186.201: bytes=32 time=348ms TTL=52
+
+Ping statistics for 103.124.186.201:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 348ms, Maximum = 348ms, Average = 348ms
