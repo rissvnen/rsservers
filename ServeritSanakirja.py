@@ -29,7 +29,6 @@ def kirjoitetaanTiedostoon(server: int, answer: str):
     file = f.readlines()
     for line in file:
         if "Average" in line:
-            print(server + 300, line)
             serv = server + 300
             pingSanakirjaan(serv, line)
 
