@@ -7,4 +7,6 @@ The app automatically refreshed the page every 10 seconds.
 
 HOW TO USE:
 
-Open the project to your IDE and fire up the project, go to 127.0.0.1:8000 and watch the divs being created
+./rsservers
+source venv/Scripts/activate
+py manage.py runserver
